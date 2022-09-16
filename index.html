@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Play!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="textContainer"> 
+        <div class="playerOneText">
+            <h1 id="playerOneName"> 
+                Player One 
+            </h1>
+            <h2 id="playerOneScoreBoard">
+                Win Streak = 0
+                    <br><br>
+                Wins = 0
+            </h2>
+            </h1>
+
+        </div>
+            <div class="container">
+                <button onClick="boxSelect(1, 0);" id="b1" class="item1"><h1>  </h1></button>
+                <button onClick="boxSelect(2, 1);" id="b2" class="item2"><h1>  </h1></button>
+                <button onClick="boxSelect(3, 2);" id="b3" class="item3"><h1>  </h1></button>
+                <button onClick="boxSelect(4, 3);" id="b4" class="item4"><h1>  </h1></button>
+                <button onClick="boxSelect(5, 4);" id="b5" class="item5"><h1>  </h1></button>
+                <button onClick="boxSelect(6, 5);" id="b6" class="item6"><h1>  </h1></button>
+                <button onClick="boxSelect(7, 6);" id="b7" class="item7"><h1>  </h1></button>
+                <button onClick="boxSelect(8, 7);" id="b8" class="item8"><h1>  </h1></button>
+                <button onClick="boxSelect(9, 8);" id="b9" class="item9"><h1>  </h1></button>
+            </div>
+        <div class="textBlankSpace">
+            <h1 class="winnerDisplay1" id="winnerDisplay1"> </h1>
+            <h1 class="winnerDisplay2" id="winnerDisplay2"> </h1>
+            <h1 class="drawDisplay" id="drawDisplay"> </h1>
+
+
+        </div>
+
+        <div class="playerOneNameButton">
+            <button onClick="playerOneNameChange();" id="nameOneButton" class="playerNameButtonBody"><h1 class="nameButtonText"> Enter Player One Name </h1></button>
+        </div>
+
+                <div class="resetContainer">
+                    <button onClick="resetBoard();" id="resetButton" class="resetButtonBody"><h1 class="resetText"> Reset Board </h1></button>
+                </div>
+
+        <div class="playerTwoNameButton">
+            <button onClick="playerTwoNameChange();" id="nameTwoButton" class="playerNameButtonBody"><h1 class="nameButtonText"> Enter Player Two Name </h1></button>
+        </div>
+
+        <div  class="playerTwoText">
+            <h1 id="playerTwoName"> 
+                Player Two 
+            </h1>
+            <h2 id="playerTwoScoreBoard">
+                Win Streak = 0
+                    <br><br>
+                Wins = 0
+            </h2>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
